@@ -4,6 +4,7 @@ import CountdownTimer from "./components/CountdownTimer";
 import { solanaImages, tronImages } from "./constant";
 import Background from "./components/Background";
 import Test from "./components/Test";
+import Socials from "./components/Socials";
 
 const App = () => {
   const [currentTronIndex, setCurrentTronIndex] = useState(0);
@@ -31,13 +32,11 @@ const App = () => {
 
   return (
     <div className="relative flex flex-col md:flex-row h-screen md:h-screen overflow-hidden bg-black">
-      <div className="w-full  h-[38%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-9 md:pb-0 md:pt-12">
-        <p className=" text-white text-lg md:text-2xl tracking-wider font-semibold  bg-[rgba(58,57,57,0.7)] py-3 px-9 rounded-full z-[99]">
-          tron-links
-        </p>
+      <div className="w-full  h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-9 md:pb-0 md:pt-12">
+        <Socials based="Tron" />
         <img
           src="/img/tron_logo.png"
-          className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem]  p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600 relative  z-[99]"
+          className="rounded-full w-[8.5rem] h-[8.5rem] md:w-[22rem] md:h-[22rem]  p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600 relative  z-[99]"
           alt=""
         />
         <motion.img
@@ -59,13 +58,11 @@ const App = () => {
       <div className="w-full h-[2px]  md:flex md:h-[55vh] md:mt-14 md:w-[2px] bg-sky-600">
         {}
       </div>
-      <div className="w-full h-[38%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-9 md:pb-0 md:pt-12">
-        <p className="text-white text-lg md:text-2xl tracking-wider font-semibold 0 bg-[rgba(58,57,57,0.7)] py-3 px-9 rounded-full z-[99]">
-          solana-links
-        </p>
+      <div className="w-full h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-9 md:pb-0 md:pt-12">
+        <Socials based="Solana" />
         <img
           src="/img/solana_logo.png"
-          className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem] 0 -mt-3 p-1  bg-[rgba(12,7,7,0.5)] border-2 border-orange-600 z-[99]"
+          className="rounded-full w-[8.5rem] h-[8.5rem] md:w-[22rem] md:h-[22rem] 0 -mt-3 p-1  bg-[rgba(12,7,7,0.5)] border-2 border-orange-600 z-[99]"
           alt=""
         />
         <motion.img
@@ -84,7 +81,7 @@ const App = () => {
       </div>
       {/* line */}
       <div className="w-full h-[2px]  md:hidden  bg-sky-600">{}</div>
-      <div className="h-[24%] relative  md:h-auto md:absolute md:bottom-12 md:left-1/2 md:-translate-x-1/2 z-[99]">
+      <div className="h-[22%] relative  md:h-auto md:absolute md:bottom-12 md:left-1/2 md:-translate-x-1/2 z-[99]">
         <CountdownTimer targetDate={targetDate} />
       </div>
 

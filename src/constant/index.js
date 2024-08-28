@@ -1,15 +1,49 @@
-export const socials = [
-  {
-    img: "/img/socials/x.png",
-    url: "",
-    variant: "w-16 h-10",
-  },
-  {
-    img: "/img/socials/tele.png",
-    url: "",
-    variant: "w-16 h-16",
-  },
-];
+export const socials = {
+  tron: [
+    {
+      img: "/img/socials/x.png",
+      url: "/tron-link",
+      variant: "w-16 h-10",
+    },
+    {
+      img: "/img/socials/tele.png",
+      url: "/tron-link",
+      variant: "w-16 h-16",
+    },
+    {
+      img: "/img/socials/dextool.png",
+      url: "/tron-link",
+      variant: "w-16 h-16",
+    },
+    {
+      img: "/img/socials/dexscreener.png",
+      url: "/tron-link",
+      variant: "w-16 h-16",
+    },
+  ],
+  solana: [
+    {
+      img: "/img/socials/x.png",
+      url: "/solana-link",
+      variant: "w-16 h-10",
+    },
+    {
+      img: "/img/socials/tele.png",
+      url: "/solana-link",
+      variant: "w-16 h-16",
+    },
+    {
+      img: "/img/socials/dextool.png",
+      url: "/solana-link",
+      variant: "w-16 h-16",
+    },
+    {
+      img: "/img/socials/dexscreener.png",
+      url: "/solana-link",
+      variant: "w-16 h-16",
+    },
+  ],
+};
 
 export const tronImages = [
   "/img/tron/tron1.avif",
