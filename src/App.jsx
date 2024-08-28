@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import CountdownTimer from "./components/CountdownTimer";
 import { solanaImages, tronImages } from "./constant";
-import Background from "./components/Background";
-import Test from "./components/Test";
 import Socials from "./components/Socials";
+import AnimateBackground from "./components/AnimateBackground";
 
 const App = () => {
   const [currentTronIndex, setCurrentTronIndex] = useState(0);
@@ -32,11 +31,11 @@ const App = () => {
 
   return (
     <div className="relative flex flex-col md:flex-row h-screen md:h-screen overflow-hidden bg-black">
-      <div className="w-full  h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-4 md:pb-0 md:pt-12 border-b-2 md:border-none border-sky-500">
+      <div className="w-full  h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-7 md:pb-0 md:pt-12 border-b-2 md:border-none border-sky-500">
         <Socials based="Tron" />
         <img
           src="/img/tron_logo.png"
-          className="rounded-full w-[8.5rem] h-[8.5rem] md:w-[22rem] md:h-[22rem]  p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600 relative  z-[99]"
+          className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem]  p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600 relative  z-[99]"
           alt=""
         />
         <motion.img
@@ -54,11 +53,11 @@ const App = () => {
         </div>
       </div>
 
-      <div className="w-full h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-4 md:pb-0 md:pt-12 border-b-2 md:border-none border-sky-500">
+      <div className="w-full h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-7 md:pb-0 md:pt-12 border-b-2 md:border-none border-sky-500">
         <Socials based="Solana" />
         <img
           src="/img/solana_logo.png"
-          className="rounded-full w-[8.5rem] h-[8.5rem] md:w-[22rem] md:h-[22rem] 0 -mt-3 p-1  bg-[rgba(12,7,7,0.5)] border-2 border-orange-600 z-[99]"
+          className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem] 0 -mt-3 p-1  bg-[rgba(12,7,7,0.5)] border-2 border-orange-600 z-[99]"
           alt=""
         />
         <motion.img
@@ -79,7 +78,7 @@ const App = () => {
         <CountdownTimer targetDate={targetDate} />
       </div>
 
-      <Test />
+      <AnimateBackground />
     </div>
   );
 };

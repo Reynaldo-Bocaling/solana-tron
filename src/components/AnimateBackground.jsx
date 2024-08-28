@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const Test = () => {
+const AnimateBackground = () => {
   const canvasRef = useRef(null);
   const ctx = useRef(null);
   const drops = useRef([]);
@@ -78,4 +78,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default AnimateBackground;
