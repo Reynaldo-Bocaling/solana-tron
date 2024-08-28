@@ -31,45 +31,27 @@ const App = () => {
 
   return (
     <div className="relative flex flex-col md:flex-row h-screen md:h-screen overflow-hidden bg-black">
-      <div className="w-full  h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-7 md:pb-0 md:pt-12 border-b-2 md:border-none border-sky-500">
+      <div className="w-full  h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-7 md:pb-0 md:pt-12 border-b-2 md:border-none border-red-600">
         <Socials based="Tron" />
         <img
           src="/img/tron_logo.png"
           className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem]  p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600 relative  z-[99]"
           alt=""
         />
-        <motion.img
-          key={currentTronIndex}
-          src={tronImages[currentTronIndex]}
-          alt={`Tron Slide ${currentTronIndex + 1}`}
-          className="object-cover h-full w-full absolute inset-0"
-          initial={{ opacity: 0.3 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-        />
+
         <div className="  w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.4)]">
           {}
         </div>
       </div>
 
-      <div className="w-full h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-7 md:pb-0 md:pt-12 border-b-2 md:border-none border-sky-500">
+      <div className="w-full h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-7 md:pb-0 md:pt-12 border-b-2 md:border-none border-red-600">
         <Socials based="Solana" />
         <img
           src="/img/solana_logo.png"
           className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem] 0 -mt-3 p-1  bg-[rgba(12,7,7,0.5)] border-2 border-orange-600 z-[99]"
           alt=""
         />
-        <motion.img
-          key={currentSolanaIndex}
-          src={solanaImages[currentSolanaIndex]}
-          alt={`Solana Slide ${currentSolanaIndex + 1}`}
-          className="object-cover h-full w-full absolute inset-0"
-          initial={{ opacity: 0.3 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.5, ease: "easeInOut" }}
-        />
+
         <div className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.4)]">
           {}
         </div>

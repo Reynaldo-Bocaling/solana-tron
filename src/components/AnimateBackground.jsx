@@ -72,7 +72,7 @@ const AnimateBackground = () => {
         left: 0,
         display: "block",
         zIndex: 50,
-        opacity: 0.4,
+        opacity: 0.8,
       }}
     />
   );
