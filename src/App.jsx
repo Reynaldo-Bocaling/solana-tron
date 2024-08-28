@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import CountdownTimer from "./components/CountdownTimer";
 import { solanaImages, tronImages } from "./constant";
 import Socials from "./components/Socials";
 import AnimateBackground from "./components/AnimateBackground";
 
 const App = () => {
-  const [currentTronIndex, setCurrentTronIndex] = useState(0);
-  const [currentSolanaIndex, setCurrentSolanaIndex] = useState(0);
-
   useEffect(() => {
     const tronInterval = setInterval(() => {
       setCurrentTronIndex((prevIndex) => (prevIndex + 1) % tronImages.length);
