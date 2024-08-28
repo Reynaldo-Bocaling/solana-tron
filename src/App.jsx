@@ -32,7 +32,7 @@ const App = () => {
 
   return (
     <div className="relative flex flex-col md:flex-row h-screen md:h-screen overflow-hidden bg-black">
-      <div className="w-full  h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-9 md:pb-0 md:pt-12">
+      <div className="w-full  h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-9 md:pb-0 md:pt-12 border-b-2 md:border-none border-sky-500">
         <Socials based="Tron" />
         <img
           src="/img/tron_logo.png"
@@ -54,11 +54,7 @@ const App = () => {
         </div>
       </div>
 
-      {/* line */}
-      <div className="w-full h-[2px]  md:flex md:h-[55vh] md:mt-14 md:w-[2px] bg-sky-500">
-        {}
-      </div>
-      <div className="w-full h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-9 md:pb-0 md:pt-12">
+      <div className="w-full h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-9 md:pb-0 md:pt-12 border-b-2 md:border-none border-sky-500">
         <Socials based="Solana" />
         <img
           src="/img/solana_logo.png"
@@ -79,8 +75,6 @@ const App = () => {
           {}
         </div>
       </div>
-      {/* line */}
-      <div className="w-full h-[2px]  md:hidden  bg-sky-500">{}</div>
       <div className="h-[22%] relative  md:h-auto md:absolute md:bottom-12 md:left-1/2 md:-translate-x-1/2 z-[99]">
         <CountdownTimer targetDate={targetDate} />
       </div>
