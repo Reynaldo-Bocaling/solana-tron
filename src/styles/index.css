@@ -13,3 +13,8 @@
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
 }
+
+.blurd-effect {
+    background: rgba(0, 0, 0, 0, 0.5);
+    backdrop-filter: blur(7);
+}
