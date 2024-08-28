@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import CountdownTimer from "./components/CountdownTimer";
 import { solanaImages, tronImages } from "./constant";
 import Background from "./components/Background";
+import Test from "./components/Test";
 
 const App = () => {
   const [currentTronIndex, setCurrentTronIndex] = useState(0);
@@ -26,17 +27,17 @@ const App = () => {
   }, []);
 
   // target date or time
-  const targetDate = "2024-08-28T16:00:00";
+  const targetDate = "2024-08-28T20:00:00";
 
   return (
     <div className="relative flex flex-col md:flex-row h-screen md:h-screen overflow-hidden bg-black">
-      <div className="w-full h-1/3 md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-7 md:pb-0 md:pt-12">
-        <p className="text-white text-2xl tracking-wider font-semibold z-20 bg-[rgba(58,57,57,0.7)] py-3 px-9 rounded-full">
+      <div className="w-full  h-[38%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-9 md:pb-0 md:pt-12">
+        <p className=" text-white text-lg md:text-2xl tracking-wider font-semibold  bg-[rgba(58,57,57,0.7)] py-3 px-9 rounded-full z-[99]">
           tron-links
         </p>
         <img
           src="/img/tron_logo.png"
-          className="rounded-full w-[12rem] h-[12] md:w-[22rem] md:h-[22] z-20 p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600"
+          className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22]  p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600 relative  z-[99]"
           alt=""
         />
         <motion.img
@@ -49,22 +50,22 @@ const App = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
         />
-        <div className="  w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.7)]">
+        <div className="  w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.4)]">
           {}
         </div>
       </div>
 
       {/* line */}
-      <div className="hidden  md:flex h-[55vh] mt-14 w-[2px] bg-red-600">
+      <div className="w-full h-[2px]  md:flex md:h-[55vh] md:mt-14 md:w-[2px] bg-sky-600">
         {}
       </div>
-      <div className="w-full h-1/3 md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-7 md:pb-0 md:pt-12">
-        <p className="text-white text-2xl tracking-wider font-semibold z-20 bg-[rgba(58,57,57,0.7)] py-3 px-9 rounded-full">
+      <div className="w-full h-[38%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-4 pt-9 md:pb-0 md:pt-12">
+        <p className="text-white text-lg md:text-2xl tracking-wider font-semibold 0 bg-[rgba(58,57,57,0.7)] py-3 px-9 rounded-full z-[99]">
           solana-links
         </p>
         <img
           src="/img/solana_logo.png"
-          className="rounded-full w-[12rem] h-[12rem] md:w-[22rem] md:h-[22rem] z-20 -mt-3 p-1  bg-[rgba(12,7,7,0.5)] border-2 border-orange-600"
+          className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem] 0 -mt-3 p-1  bg-[rgba(12,7,7,0.5)] border-2 border-orange-600 z-[99]"
           alt=""
         />
         <motion.img
@@ -77,16 +78,17 @@ const App = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
         />
-        <div className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.7)]">
+        <div className="w-full h-full absolute top-0 left-0 bg-[rgba(0,0,0,0.4)]">
           {}
         </div>
       </div>
-
-      <div className="h-1/3 relative  md:h-auto md:absolute md:bottom-12 md:left-1/2 md:-translate-x-1/2">
+      {/* line */}
+      <div className="w-full h-[2px]  md:hidden  bg-sky-600">{}</div>
+      <div className="h-[24%] relative  md:h-auto md:absolute md:bottom-12 md:left-1/2 md:-translate-x-1/2 z-[99]">
         <CountdownTimer targetDate={targetDate} />
       </div>
 
-      <Background />
+      <Test />
     </div>
   );
 };

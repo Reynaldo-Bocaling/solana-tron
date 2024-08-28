@@ -30,7 +30,7 @@ const CountdownTimer = ({ targetDate }) => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      <h1 className="text-3xl md:text-4xl font-bold text-white whitespace-nowrap mb-5">
+      <h1 className="text-2xl md:text-4xl font-bold text-white whitespace-nowrap mb-5">
         BRIDGE OPENS IN:
       </h1>
       <h1 className="text-5xl md:text-7xl font-bold bg-[rgba(0,0,0,0.5)] text-white rounded-full shadow-lg py-7 px-12 border flex items-center gap-5 whitespace-nowrap">
