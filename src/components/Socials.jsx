@@ -14,7 +14,7 @@ const Socials = ({ based }) => {
           <a
             key={index}
             href={item.url}
-            className="cursor-pointer z-50 mb-2 hover:scale-110 transition-all duration-200 ease-in-out"
+            className="cursor-pointer z-50 mb-2 hover:scale-110 transition-all duration-300 ease-in-out"
           >
             <img src={item.img} className="w-16 h-16 " alt="" />
           </a>
