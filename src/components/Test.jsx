@@ -31,7 +31,12 @@ const Test = () => {
       ctx.current.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.current.fillRect(0, 0, canvas.width, canvas.height);
 
-      ctx.current.fillStyle = "#0099FF"; // green text
+      // Create gradient
+      const gradient = ctx.current.createLinearGradient(0, 0, canvas.width, 0);
+      gradient.addColorStop(0, "red");
+      gradient.addColorStop(1, "orange");
+
+      ctx.current.fillStyle = gradient;
       ctx.current.font = `${font_size}px arial`;
 
       for (let i = 0; i < drops.current.length; i++) {
@@ -65,7 +70,6 @@ const Test = () => {
         position: "absolute",
         top: 0,
         left: 0,
-        // background: "red",
         display: "block",
         zIndex: 50,
         opacity: 0.4,

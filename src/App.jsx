@@ -37,7 +37,7 @@ const App = () => {
         </p>
         <img
           src="/img/tron_logo.png"
-          className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22]  p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600 relative  z-[99]"
+          className="rounded-full w-[10rem] h-[10rem] md:w-[22rem] md:h-[22rem]  p-3  bg-[rgba(12,7,7,0.5)] border-2 border-red-600 relative  z-[99]"
           alt=""
         />
         <motion.img
