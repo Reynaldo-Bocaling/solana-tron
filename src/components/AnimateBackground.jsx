@@ -14,7 +14,7 @@ const AnimateBackground = () => {
 
     // English characters
     let english =
-      "TronTronTronNormieTronTronTronNormieTronTronTronNormieTronTronTronNormieTronTronTronNormieTronTronTronNormieTronTronTronTronTron";
+      "TronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronTronSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolanaSolana";
     english = english.split("");
 
     const font_size = 14;
