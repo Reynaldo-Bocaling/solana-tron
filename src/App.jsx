@@ -28,7 +28,7 @@ const App = () => {
   }, []);
 
   // target date or time
-  const targetDate = "2024-08-28T20:00:00";
+  const targetDate = "2024-08-28T22:00:00";
 
   return (
     <div className="relative flex flex-col md:flex-row h-screen md:h-screen overflow-hidden bg-black">
