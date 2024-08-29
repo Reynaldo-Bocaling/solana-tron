@@ -1,32 +1,13 @@
-import React, { useEffect, useState } from "react";
 import CountdownTimer from "./components/CountdownTimer";
-import { solanaImages, tronImages } from "./constant";
 import Socials from "./components/Socials";
-import AnimateBackground from "./components/AnimateBackground";
+import VantaHaloEffect from "./components/VantaBackground";
 
 const App = () => {
-  useEffect(() => {
-    const tronInterval = setInterval(() => {
-      setCurrentTronIndex((prevIndex) => (prevIndex + 1) % tronImages.length);
-    }, 3500);
-
-    const solanaInterval = setInterval(() => {
-      setCurrentSolanaIndex(
-        (prevIndex) => (prevIndex + 1) % solanaImages.length
-      );
-    }, 3500);
-
-    return () => {
-      clearInterval(tronInterval);
-      clearInterval(solanaInterval);
-    };
-  }, []);
-
   // target date or time
   const targetDate = "2024-08-28T22:00:00";
 
   return (
-    <div className="relative flex flex-col md:flex-row h-screen md:h-screen overflow-hidden bg-black">
+    <div className="relative flex flex-col md:flex-row h-screen">
       <div className="w-full  h-[39%] md:w-1/2 md:h-full relative flex flex-col items-center justify-start gap-3 md:gap-7 pb-7 pt-5 md:pb-0 md:pt-12 shadow-md md:shadow-none shadow-red-500">
         <Socials based="Tron" />
         <img
@@ -56,7 +37,8 @@ const App = () => {
         <CountdownTimer targetDate={targetDate} />
       </div>
 
-      <AnimateBackground />
+      {/* <AnimateBackground /> */}
+      <VantaHaloEffect />
     </div>
   );
 };
